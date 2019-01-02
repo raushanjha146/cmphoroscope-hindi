@@ -61,7 +61,19 @@ class CMPHoroscope:
         #print("-4-->" + date)
 
         ######### fro Horoscope ################
-        web_page = urlopen(url_hindi)
+        hdr = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+            'Accept-Encoding': 'none',
+            'Accept-Language': 'en-US,en;q=0.8',
+            'Connection': 'keep-alive'}
+        req = urllib2.Request(url_hindi, headers=hdr)
+        try:
+            web_page = urllib2.urlopen(req)
+        except urllib2.HTTPError, e:
+            print "--------------" +e.fp.read()
+		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TOMORROW---"
         for extract_div in soup.findAll("div", {"id": "tomorrow"}):
@@ -94,7 +106,19 @@ class CMPHoroscope:
         #print("-4-->" + date)
 
         ######### fro Horoscope ################
-        web_page = urlopen(url_hindi)
+        hdr = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+            'Accept-Encoding': 'none',
+            'Accept-Language': 'en-US,en;q=0.8',
+            'Connection': 'keep-alive'}
+        req = urllib2.Request(url_hindi, headers=hdr)
+        try:
+            web_page = urllib2.urlopen(req)
+        except urllib2.HTTPError, e:
+            print "--------------" +e.fp.read()
+		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "yesterday"}):
@@ -126,7 +150,19 @@ class CMPHoroscope:
         # print("-4-->" + date)
 
         ######### fro Horoscope ################
-        web_page = urlopen(url_hindi)
+        hdr = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+            'Accept-Encoding': 'none',
+            'Accept-Language': 'en-US,en;q=0.8',
+            'Connection': 'keep-alive'}
+        req = urllib2.Request(url_hindi, headers=hdr)
+        try:
+            web_page = urllib2.urlopen(req)
+        except urllib2.HTTPError, e:
+            print "--------------" +e.fp.read()
+		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "today1"}):
@@ -158,7 +194,19 @@ class CMPHoroscope:
         # print("-4-->" + date)
 
         ######### fro Horoscope ################
-        web_page = urlopen(url_hindi)
+        hdr = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+            'Accept-Encoding': 'none',
+            'Accept-Language': 'en-US,en;q=0.8',
+            'Connection': 'keep-alive'}
+        req = urllib2.Request(url_hindi, headers=hdr)
+        try:
+            web_page = urllib2.urlopen(req)
+        except urllib2.HTTPError, e:
+            print "--------------" +e.fp.read()
+		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "today1"}):
@@ -190,7 +238,19 @@ class CMPHoroscope:
         url_hindi = "https://hindi.astroyogi.com/rashifal"+date+"/"+sunsign_hn+"-rashifal-"+date
         #print url_hindi
         ######### fro Horoscope ################
-        web_page = urlopen(url_hindi)
+        hdr = {
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+            'Accept-Encoding': 'none',
+            'Accept-Language': 'en-US,en;q=0.8',
+            'Connection': 'keep-alive'}
+        req = urllib2.Request(url_hindi, headers=hdr)
+        try:
+            web_page = urllib2.urlopen(req)
+        except urllib2.HTTPError, e:
+            print "--------------" +e.fp.read()
+		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
         horoscope=""
