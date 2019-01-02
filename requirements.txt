@@ -7,4 +7,5 @@ itsdangerous
 newrelic
 lxml
 requests
+urllib2
 app
