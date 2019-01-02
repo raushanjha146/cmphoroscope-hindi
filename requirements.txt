@@ -7,5 +7,6 @@ itsdangerous
 newrelic
 lxml
 requests
-urllib2
+BeautifulSoup
+bs4
 app
