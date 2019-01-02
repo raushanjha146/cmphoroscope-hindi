@@ -19,13 +19,13 @@ class CMPHoroscope:
         url_english = "http://www.ganeshaspeaks.com/horoscopes/daily-horoscope/" + sunsign_en
         ######## for Date ################
         response = requests.get(url_english)
-        #print("-2-->" + response.content)
+        print("-2-->" + response.content)
         tree = html.fromstring(response.content)
         date = str(tree.xpath(
             "//*[@id=\"daily\"]/div/div[1]/div[1]/div[2]/div/p/text()"))
         #print("-3-->" + date)
         date = date.replace("']", "").replace("['", "")
-        #print("-4-->" + date)
+        print("-4-->" + date)
 
         ######### fro Horoscope ################
         hdr = {
@@ -36,10 +36,10 @@ class CMPHoroscope:
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
-        try:
+        #try:
             web_page = urllib2.urlopen(req)
-        except urllib2.HTTPError, e:
-            print "--------------" +e.fp.read()
+        #except urllib2.HTTPError, e:
+        #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
