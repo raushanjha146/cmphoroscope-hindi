@@ -7,6 +7,5 @@ itsdangerous
 newrelic
 lxml
 requests
-BeautifulSoup
 bs4
 app
