@@ -1,6 +1,7 @@
 from lxml import html
 import requests
-from urllib2 import urlopen
+import urllib2
+#from urllib2 import urlopen
 from bs4 import BeautifulSoup
 import re
 
