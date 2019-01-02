@@ -37,7 +37,7 @@ class CMPHoroscope:
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
         #try:
-            web_page = urllib2.urlopen(req)
+        web_page = urllib2.urlopen(req)
         #except urllib2.HTTPError, e:
         #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
