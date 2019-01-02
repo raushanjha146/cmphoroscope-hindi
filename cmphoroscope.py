@@ -195,7 +195,7 @@ class CMPHoroscope:
         horoscope=""
         for extract_div in soup.findAll("p", {"class": "text-justify"}):
             horoscope+=extract_div.text
-        print horoscope
+        #print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
             'date': date,
