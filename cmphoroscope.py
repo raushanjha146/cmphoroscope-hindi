@@ -81,10 +81,10 @@ class CMPHoroscope:
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
-        try:
-            web_page = urllib2.urlopen(req)
-        except urllib2.HTTPError, e:
-            print "--------------" +e.fp.read()
+        #try:
+        web_page = urllib2.urlopen(req)
+        #except urllib2.HTTPError, e:
+        #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TOMORROW---"
@@ -126,10 +126,10 @@ class CMPHoroscope:
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
-        try:
-            web_page = urllib2.urlopen(req)
-        except urllib2.HTTPError, e:
-            print "--------------" +e.fp.read()
+        #try:
+        web_page = urllib2.urlopen(req)
+        #except urllib2.HTTPError, e:
+        #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
@@ -170,10 +170,10 @@ class CMPHoroscope:
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
-        try:
-            web_page = urllib2.urlopen(req)
-        except urllib2.HTTPError, e:
-            print "--------------" +e.fp.read()
+        #try:
+        web_page = urllib2.urlopen(req)
+        #except urllib2.HTTPError, e:
+        #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
@@ -214,10 +214,10 @@ class CMPHoroscope:
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
-        try:
-            web_page = urllib2.urlopen(req)
-        except urllib2.HTTPError, e:
-            print "--------------" +e.fp.read()
+        #try:
+        web_page = urllib2.urlopen(req)
+        #except urllib2.HTTPError, e:
+        #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
@@ -258,10 +258,10 @@ class CMPHoroscope:
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'}
         req = urllib2.Request(url_hindi, headers=hdr)
-        try:
-            web_page = urllib2.urlopen(req)
-        except urllib2.HTTPError, e:
-            print "--------------" +e.fp.read()
+        #try:
+        web_page = urllib2.urlopen(req)
+        #except urllib2.HTTPError, e:
+        #    print "--------------" +e.fp.read()
 		#web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
         #print "---TODAY---"
