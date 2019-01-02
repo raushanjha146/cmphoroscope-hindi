@@ -29,10 +29,10 @@ class CMPHoroscope:
         ######### fro Horoscope ################
         web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
-        print "---TODAY---"
+        #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "today1"}):
             horoscope = extract_div.text
-        print horoscope
+        #print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
             'date': date,
@@ -57,15 +57,15 @@ class CMPHoroscope:
             "//*[@id=\"daily\"]/div/div[1]/div[1]/div[2]/div/p/text()"))
         # print("-3-->" + date)
         date = date.replace("']", "").replace("['", "")
-        print("-4-->" + date)
+        #print("-4-->" + date)
 
         ######### fro Horoscope ################
         web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
-        print "---TOMORROW---"
+        #print "---TOMORROW---"
         for extract_div in soup.findAll("div", {"id": "tomorrow"}):
             horoscope = extract_div.text
-        print horoscope
+        #print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
             'date': date,
@@ -90,15 +90,15 @@ class CMPHoroscope:
             "//*[@id=\"daily\"]/div/div[1]/div[1]/div[2]/div/p/text()"))
         # print("-3-->" + date)
         date = date.replace("']", "").replace("['", "")
-        print("-4-->" + date)
+        #print("-4-->" + date)
 
         ######### fro Horoscope ################
         web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
-        print "---TODAY---"
+        #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "yesterday"}):
             horoscope = extract_div.text
-        print horoscope
+        #print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
             'date': date,
@@ -127,7 +127,7 @@ class CMPHoroscope:
         ######### fro Horoscope ################
         web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
-        print "---TODAY---"
+        #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "today1"}):
             horoscope = extract_div.text
         # print horoscope
@@ -159,7 +159,7 @@ class CMPHoroscope:
         ######### fro Horoscope ################
         web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
-        print "---TODAY---"
+        #print "---TODAY---"
         for extract_div in soup.findAll("div", {"id": "today1"}):
             horoscope = extract_div.text
         # print horoscope
@@ -183,15 +183,15 @@ class CMPHoroscope:
         tree = html.fromstring(response.content)
         date = str(tree.xpath(
             "//*[@id=\"daily\"]/div/div[1]/div[1]/div[2]/div/p/text()"))
-        print("-3-->" + date)
+        #print("-3-->" + date)
         date = date.replace("']", "").replace("['", "")
-        print("-4-->" + date)
+        #print("-4-->" + date)
         url_hindi = "https://hindi.astroyogi.com/rashifal"+date+"/"+sunsign_hn+"-rashifal-"+date
-        print url_hindi
+        #print url_hindi
         ######### fro Horoscope ################
         web_page = urlopen(url_hindi)
         soup = BeautifulSoup(web_page, 'html.parser')
-        print "---TODAY---"
+        #print "---TODAY---"
         horoscope=""
         for extract_div in soup.findAll("p", {"class": "text-justify"}):
             horoscope+=extract_div.text
