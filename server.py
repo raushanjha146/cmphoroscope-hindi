@@ -14,7 +14,7 @@ def index_route():
         'author': 'Raushan Kumar',
         'author_url': 'http://raushan-kumar.github.io/',
         'base_url': 'cmp-horoscope-api.herokuapp.com',
-        'project_name': 'CMPHoroscope API',
+        'project_name': 'CMPHoroscope-HINDI API',
         'project_url': 'http://raushan-kumar.github.io/CMPHoroscope-API'
     })
 
