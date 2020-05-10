@@ -1,6 +1,7 @@
 ---today
 
 http://127.0.0.1:5000/horoscope/today-hindi/taurus/vrishabha-rashi/hindi
+http://127.0.0.1:5000/horoscope/today-hindi/taurus/vrishabha-rashi/hindi
 
 
 

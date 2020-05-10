@@ -194,7 +194,7 @@ class CMPHoroscope:
         # print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
-            'date': date,
+            'week': date,
             'horoscope': horoscope,
             'sunsign english': sunsign_en,
             'sunsign hindi': sunsign_hn
@@ -240,7 +240,7 @@ class CMPHoroscope:
         # print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
-            'date': date,
+            'month': date,
             'horoscope': horoscope,
             'sunsign english': sunsign_en,
             'sunsign hindi': sunsign_hn
@@ -289,7 +289,7 @@ class CMPHoroscope:
         #print horoscope
         horoscope = horoscope.replace("\n", "").replace("  ", "").replace("[\"", "").replace("\"]", "")
         dict = {
-            'date': date,
+            'year': date,
             'horoscope': horoscope,
             'sunsign english': sunsign_en,
             'sunsign hindi': sunsign_hn
