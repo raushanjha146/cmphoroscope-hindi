@@ -58,7 +58,7 @@ def yesterday_horoscope_route_hindi(sunsign_en, sunsign_hn, language):
 def weekly_horoscope_route_hindi(sunsign_en, sunsign_hn, language):
     result = dict(CMPHoroscope.get_weekly_horoscope_hindi(sunsign_en, sunsign_hn, language))
     #result = dict(CMPHoroscope.get_test())
-    return jsonify(date=result['date'],
+    return jsonify(week=result['week'],
             sunsign_en=result['sunsign english'],
             sunsign_hn=result['sunsign hindi'],
             horoscope=result['horoscope'])
@@ -68,7 +68,7 @@ def weekly_horoscope_route_hindi(sunsign_en, sunsign_hn, language):
 def monthly_horoscope_route_hindi(sunsign_en, sunsign_hn, language):
     result = dict(CMPHoroscope.get_monthly_horoscope_hindi(sunsign_en, sunsign_hn, language))
     #result = dict(CMPHoroscope.get_test())
-    return jsonify(date=result['date'],
+    return jsonify(month=result['month'],
             sunsign_en=result['sunsign english'],
             sunsign_hn=result['sunsign hindi'],
             horoscope=result['horoscope'])
@@ -78,7 +78,7 @@ def monthly_horoscope_route_hindi(sunsign_en, sunsign_hn, language):
 def yearly_horoscope_route_hindi(sunsign_en, sunsign_hn, language):
     result = dict(CMPHoroscope.get_yearly_horoscope_hindi(sunsign_en, sunsign_hn, language))
     #result = dict(CMPHoroscope.get_test())
-    return jsonify(date=result['date'],
+    return jsonify(year=result['year'],
             sunsign_en=result['sunsign english'],
             sunsign_hn=result['sunsign hindi'],
             horoscope=result['horoscope'])
